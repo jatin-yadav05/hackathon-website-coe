@@ -132,7 +132,7 @@ const Welcome = () => {
               </div>
               
             </div>
-            <a href="" className="w-full lg:w-1/4 h-20 flex items-center text-white bg-green-700 justify-center m-1 rounded-lg text-3xl mt-5 "><p style={{fontFamily: "'Roboto Condensed', serif",fontWeight:500}}>Join the Waitlist</p></a>
+            <a href="" className="w-full lg:w-1/4 h-20 flex items-center text-white bg-green-700 justify-center m-1 rounded-lg text-3xl mt-5"><p style={{fontFamily: "'Roboto Condensed', serif",fontWeight:500}}>Join the Waitlist</p></a>
           </div>
           
         </div>
