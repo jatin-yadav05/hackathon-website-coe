@@ -95,7 +95,7 @@ const Welcome = () => {
         <div className="w-1/3 flex" >
             <a href="" className="w-1/3 hidden lg:flex items-center text-white justify-center"><p style={{fontFamily: "'Roboto Condensed', serif",fontWeight:500}}>The Hackathon</p></a>
             <a href="" className="w-1/3 hidden lg:flex items-center text-white justify-center"><p style={{fontFamily: "'Roboto Condensed', serif",fontWeight:500}}>The Rundown</p></a>
-            <a href="" className="w-full lg:w-1/3 flex items-center text-white bg-green-700 justify-center m-1 rounded"><p style={{fontFamily: "'Roboto Condensed', serif",fontWeight:500}}>Join the Waitlist</p></a>
+            <a href="" className="w-full lg:w-1/3 flex items-center text-white bg-green-700 hover:bg-green-800 justify-center m-1 rounded"><p style={{fontFamily: "'Roboto Condensed', serif",fontWeight:500}}>Join the Waitlist</p></a>
         </div>
       </div>
 
@@ -103,7 +103,7 @@ const Welcome = () => {
 
       {/* main code */}
         <div className="w-full h-screen  flex items-center justify-center m-0 p-0 md:pl-4 lg:pl-36 overflow-hidden " >
-          <div className="w-4/5 h-4/6 mt-30 md:mt-32 ">
+          <div className="w-4/5 h-fit mt-30  ">
               <p className="text-white pt-10 text-3xl " style={{fontFamily: "Nunito', serif" ,fontWeight: 800,letterSpacing: "0.009em" }} >PRESENTING, </p>
               <p className="text-white pt-2 text-5xl md:text-7xl  " style={{fontFamily: "Nunito', serif" ,fontWeight: 800,letterSpacing: "0.009em" ,color: "#fa4639",textDecoration: "underline" }} >TECH NOVA! </p>
             <div className="block md:flex w-11/12 h-max  mt-4 ">
@@ -117,22 +117,22 @@ const Welcome = () => {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 "  >
               <div className="w-full md:w-64 lg:w-72 bg-white h-12 m-2 flex justify-center items-center text-white " style={{backgroundColor: "#ba7c2b",fontFamily: "Nunito', serif" ,fontWeight: 500,letterSpacing: "0.009em" }} >
-                <p>SINGLE THEME</p>
+                <p>SINGLE THEME HACKAHTON</p>
               </div>
               <div className="w-full md:w-64 lg:w-72 bg-white h-12 m-2 flex justify-center items-center text-white" style={{backgroundColor: "#c23371",fontFamily: "Nunito', serif" ,fontWeight: 500,letterSpacing: "0.009em" }} >
                 <p>FUN ACTIVITIES</p>
               </div>
               <div className="w-full md:w-64 lg:w-72 bg-blue-500 h-12 m-2 flex justify-center items-center text-white" style={{backgroundColor: "",fontFamily: "Nunito', serif" ,fontWeight: 500,letterSpacing: "0.009em" }} >
-                <p>36HRS COMPETITION</p>
+                <p>24HR+ COMPETITION</p>
               </div>
               <div className="w-full md:w-64 lg:w-72 bg-white h-12 m-2 flex justify-center items-center text-white" style={{backgroundColor: "brown",fontFamily: "Nunito', serif" ,fontWeight: 500,letterSpacing: "0.009em" }} >
-                <p>WEB DEVELOPMENT</p>
+                <p >WEB DEVELOPMENT  </p>
               </div>
               
               </div>
               
             </div>
-            <a href="" className="w-full lg:w-1/4 h-20 flex items-center text-white bg-green-700 justify-center m-1 rounded-lg text-3xl mt-5"><p style={{fontFamily: "'Roboto Condensed', serif",fontWeight:500}}>Join the Waitlist</p></a>
+            <a href=""  className="w-full lg:w-1/4 h-20 flex items-center text-white bg-green-700 hover:bg-green-800 justify-center mt-2 lg:mt-5 rounded-lg text-3xl  "><p style={{fontFamily: "'Roboto Condensed', serif",fontWeight:500,display:"flex"}}>Join the Waitlist <img src="arrow.svg" alt="" className="ml-2" style={{height: "35px"}} /> </p></a>
           </div>
           
         </div>
