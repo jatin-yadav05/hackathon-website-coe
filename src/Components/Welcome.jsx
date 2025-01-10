@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './Welcome.css';
+import Glimpse from "./Glimpse";
 
 const Welcome = () => {
   const [opacity, setOpacity] = useState(1);  // For main div opacity
@@ -72,7 +73,7 @@ const Welcome = () => {
 
 
       {/* Additional content to create scrolling */}
-      <div style={{ height: "110vh",background: "linear-gradient(90deg, rgb(5, 11, 20,0.7) 0%, rgb(5, 11, 20,0.75) 100%)", }}>
+      <div style={{ height: "max-content",background: "linear-gradient(90deg, rgb(5, 11, 20,0.7) 0%, rgb(5, 11, 20,0.75) 100%)", }}>
 
         {/* Sticky Navbar with opacity controlled by scroll */}
       <div
@@ -116,16 +117,16 @@ const Welcome = () => {
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 "  >
-              <div className="w-full md:w-64 lg:w-72 bg-white h-12 m-2 flex justify-center items-center text-white " style={{backgroundColor: "#ba7c2b",fontFamily: "Nunito', serif" ,fontWeight: 500,letterSpacing: "0.009em" }} >
+              <div className="w-full md:w-64 lg:w-72 h-12 m-2 flex justify-center items-center text-white " style={{backgroundColor: "#ba7c2b",fontFamily: "Nunito', serif" ,fontWeight: 500,letterSpacing: "0.009em" }} >
                 <p>SINGLE THEME HACKAHTON</p>
               </div>
-              <div className="w-full md:w-64 lg:w-72 bg-white h-12 m-2 flex justify-center items-center text-white" style={{backgroundColor: "#c23371",fontFamily: "Nunito', serif" ,fontWeight: 500,letterSpacing: "0.009em" }} >
+              <div className="w-full md:w-64 lg:w-72  h-12 m-2 flex justify-center items-center text-white" style={{backgroundColor: "#c23371",fontFamily: "Nunito', serif" ,fontWeight: 500,letterSpacing: "0.009em" }} >
                 <p>FUN ACTIVITIES</p>
               </div>
               <div className="w-full md:w-64 lg:w-72 bg-blue-500 h-12 m-2 flex justify-center items-center text-white" style={{backgroundColor: "",fontFamily: "Nunito', serif" ,fontWeight: 500,letterSpacing: "0.009em" }} >
                 <p>24HR+ COMPETITION</p>
               </div>
-              <div className="w-full md:w-64 lg:w-72 bg-white h-12 m-2 flex justify-center items-center text-white" style={{backgroundColor: "brown",fontFamily: "Nunito', serif" ,fontWeight: 500,letterSpacing: "0.009em" }} >
+              <div className="w-full md:w-64 lg:w-72 h-12 m-2 flex justify-center items-center text-white" style={{backgroundColor: "brown",fontFamily: "Nunito', serif" ,fontWeight: 500,letterSpacing: "0.009em" }} >
                 <p >WEB DEVELOPMENT  </p>
               </div>
               
@@ -136,6 +137,8 @@ const Welcome = () => {
           </div>
           
         </div>
+
+        <Glimpse/>
 
       </div>
 
