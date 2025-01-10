@@ -75,7 +75,7 @@ const Welcome = () => {
 
         {/* Sticky Navbar with opacity controlled by scroll */}
       <div
-        className="w-full h-10 "
+        className="w-full h-10 md:h-12 "
         style={{
           position: "sticky",
           top: 0,  // Keeps the navbar at the top
