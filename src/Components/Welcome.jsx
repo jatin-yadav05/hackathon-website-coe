@@ -51,18 +51,19 @@ const Welcome = () => {
         }}
       >
         <div
-          className="w-11/12 md:w-9/12 lg:w-1/3 h-max text-4xl"
+          className="w-11/12 md:w-9/12 lg:w-1/3 h-max text-4xl sm:text-6xl"
           style={{ fontFamily: "'Emilys Candy', serif", color: "white", fontWeight: 400 }}
         >
           <p>Hey, welcome!...</p>
           <br />
-          <p className="text-2xl" style={{ fontFamily: "'Mukta', serif" }}>
+          <p className="text-2xl sm:text-3xl" style={{ fontFamily: "'Mukta', serif", fontWeight: 100 }}>
             Our winter project is to kick off a hackathon renaissance, together. We'll begin soon, and we ask for you to join us!
           </p>
           <br />
-          <p className="text-2xl" style={{ fontFamily: "'Mukta', serif" }}>
-            This is your invitation to meet and make mischief...
+          <p className="text-2xl sm:text-3xl" style={{ fontFamily: "'Mukta', serif", fontWeight: 100  }}>
+            This is your <span style={{fontWeight:400}} >invitation</span> to meet and make mischief...
           </p>
+          <br />
           <center>
             <img src="downarrrow.svg" alt="" style={{ height: "5vh", animation: 'example 2s linear infinite' }} />
           </center>
@@ -71,11 +72,11 @@ const Welcome = () => {
 
 
       {/* Additional content to create scrolling */}
-      <div style={{ height: "100vh",background: "linear-gradient(90deg, rgb(5, 11, 20,0.5) 0%, rgb(5, 11, 20,0.5) 100%)", }}>
+      <div style={{ height: "110vh",background: "linear-gradient(90deg, rgb(5, 11, 20,0.5) 0%, rgb(5, 11, 20,0.5) 100%)", }}>
 
         {/* Sticky Navbar with opacity controlled by scroll */}
       <div
-        className="w-full h-10 md:h-12 "
+        className="w-full h-16 "
         style={{
           position: "sticky",
           top: 0,  // Keeps the navbar at the top
@@ -87,11 +88,11 @@ const Welcome = () => {
           display: "flex",
         }}>
 
-        <div className="flex w-3/5 sm:w-2/3 text-white ">
+        <div className="flex w-2/3 text-white ">
             <img src="coe.jpg" alt="" className="ml-2" />
             <a href="#" className="flex items-center text-xl"><p style={{fontFamily: "'Roboto Condensed', serif",fontWeight:500}} >CENTER OF EXCELLENCE</p> </a>
         </div>
-        <div className="w-2/5 flex" >
+        <div className="w-1/3 flex" >
             <a href="" className="w-1/3 hidden lg:flex items-center text-white justify-center"><p style={{fontFamily: "'Roboto Condensed', serif",fontWeight:500}}>The Hackathon</p></a>
             <a href="" className="w-1/3 hidden lg:flex items-center text-white justify-center"><p style={{fontFamily: "'Roboto Condensed', serif",fontWeight:500}}>The Rundown</p></a>
             <a href="" className="w-full lg:w-1/3 flex items-center text-white bg-green-700 justify-center m-1 rounded"><p style={{fontFamily: "'Roboto Condensed', serif",fontWeight:500}}>Join the Waitlist</p></a>
@@ -101,6 +102,40 @@ const Welcome = () => {
       {/* navbar ends */}
 
       {/* main code */}
+        <div className="w-full h-screen  flex items-center justify-center m-0 p-0 md:pl-4 lg:pl-36 overflow-hidden " >
+          <div className="w-4/5 h-4/6 mt-30 md:mt-32 ">
+              <p className="text-white pt-10 text-3xl " style={{fontFamily: "Nunito', serif" ,fontWeight: 800,letterSpacing: "0.009em" }} >CHITKARIAN'S, </p>
+              <p className="text-white pt-2 text-6xl md:text-7xl  " style={{fontFamily: "Nunito', serif" ,fontWeight: 800,letterSpacing: "0.009em" ,color: "#fa4639" }} >ASSEMBLE! </p>
+            <div className="block md:flex w-11/12 h-max  mt-4 ">
+              <div className="h-36 w-32 bg-orange-800 rounded-xl border-white border-2 relative overflow-hidden" style={{backgroundColor: "transparent"}}  >
+                <div className="w-full h-12 p-1 flex justify-center items-center" style={{backgroundColor: "#0b1a2e"}}>
+                    <p className="text-white text-2xl"  style={{textAlign: "center",fontFamily: "Nunito', serif" ,fontWeight: 800,letterSpacing: "0.009em" }} >JAN</p>
+                </div>
+                <div className="flex justify-center items-center w-full h-24 text-5xl pb-2 border-t-2" style={{backgroundColor: "#FFF8F299"}} >
+                  <p style={{textAlign: "center",fontFamily: "Nunito', serif" ,fontWeight: 800,letterSpacing: "0.009em" }} >10</p>
+                </div>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 "  >
+              <div className="w-full md:w-64 lg:w-72 bg-white h-12 m-2 flex justify-center items-center text-white " style={{backgroundColor: "#ba7c2b",fontFamily: "Nunito', serif" ,fontWeight: 500,letterSpacing: "0.009em" }} >
+                <p>SINGLE THEME</p>
+              </div>
+              <div className="w-full md:w-64 lg:w-72 bg-white h-12 m-2 flex justify-center items-center text-white" style={{backgroundColor: "#c23371",fontFamily: "Nunito', serif" ,fontWeight: 500,letterSpacing: "0.009em" }} >
+                <p>FUN ACTIVITIES</p>
+              </div>
+              <div className="w-full md:w-64 lg:w-72 bg-white h-12 m-2 flex justify-center items-center text-white" style={{backgroundColor: "#1a3f71",fontFamily: "Nunito', serif" ,fontWeight: 500,letterSpacing: "0.009em" }} >
+                <p>36HRS COMPETITION</p>
+              </div>
+              <div className="w-full md:w-64 lg:w-72 bg-white h-12 m-2 flex justify-center items-center text-white" style={{backgroundColor: "brown",fontFamily: "Nunito', serif" ,fontWeight: 500,letterSpacing: "0.009em" }} >
+                <p>WEB DEVELOPMENT</p>
+              </div>
+              
+              </div>
+              
+            </div>
+            <a href="" className="w-full lg:w-1/4 h-20 flex items-center text-white bg-green-700 justify-center m-1 rounded-lg text-3xl mt-5 "><p style={{fontFamily: "'Roboto Condensed', serif",fontWeight:500}}>Join the Waitlist</p></a>
+          </div>
+          
+        </div>
 
       </div>
 
