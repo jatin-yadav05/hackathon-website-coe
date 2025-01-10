@@ -10,7 +10,7 @@ const Welcome = () => {
     const windowHeight = window.innerHeight; // Height of the viewport
 
     // Calculate the opacity for the main div (1 at the top, 0.5 at the bottom of the first viewport)
-    const newOpacity = Math.max(1 - scrollTop / windowHeight, 0.5);
+    const newOpacity = Math.max(1 - scrollTop / windowHeight, 0.8);
     setOpacity(newOpacity);
 
     // Calculate the navbar opacity based on scroll position of the main content
@@ -72,7 +72,7 @@ const Welcome = () => {
 
 
       {/* Additional content to create scrolling */}
-      <div style={{ height: "110vh",background: "linear-gradient(90deg, rgb(5, 11, 20,0.5) 0%, rgb(5, 11, 20,0.5) 100%)", }}>
+      <div style={{ height: "110vh",background: "linear-gradient(90deg, rgb(5, 11, 20,0.7) 0%, rgb(5, 11, 20,0.75) 100%)", }}>
 
         {/* Sticky Navbar with opacity controlled by scroll */}
       <div
@@ -104,8 +104,8 @@ const Welcome = () => {
       {/* main code */}
         <div className="w-full h-screen  flex items-center justify-center m-0 p-0 md:pl-4 lg:pl-36 overflow-hidden " >
           <div className="w-4/5 h-4/6 mt-30 md:mt-32 ">
-              <p className="text-white pt-10 text-3xl " style={{fontFamily: "Nunito', serif" ,fontWeight: 800,letterSpacing: "0.009em" }} >CHITKARIAN'S, </p>
-              <p className="text-white pt-2 text-6xl md:text-7xl  " style={{fontFamily: "Nunito', serif" ,fontWeight: 800,letterSpacing: "0.009em" ,color: "#fa4639" }} >ASSEMBLE! </p>
+              <p className="text-white pt-10 text-3xl " style={{fontFamily: "Nunito', serif" ,fontWeight: 800,letterSpacing: "0.009em" }} >PRESENTING, </p>
+              <p className="text-white pt-2 text-5xl md:text-7xl  " style={{fontFamily: "Nunito', serif" ,fontWeight: 800,letterSpacing: "0.009em" ,color: "#fa4639",textDecoration: "underline" }} >TECH NOVA! </p>
             <div className="block md:flex w-11/12 h-max  mt-4 ">
               <div className="h-36 w-32 bg-orange-800 rounded-xl border-white border-2 relative overflow-hidden" style={{backgroundColor: "transparent"}}  >
                 <div className="w-full h-12 p-1 flex justify-center items-center" style={{backgroundColor: "#0b1a2e"}}>
@@ -122,7 +122,7 @@ const Welcome = () => {
               <div className="w-full md:w-64 lg:w-72 bg-white h-12 m-2 flex justify-center items-center text-white" style={{backgroundColor: "#c23371",fontFamily: "Nunito', serif" ,fontWeight: 500,letterSpacing: "0.009em" }} >
                 <p>FUN ACTIVITIES</p>
               </div>
-              <div className="w-full md:w-64 lg:w-72 bg-white h-12 m-2 flex justify-center items-center text-white" style={{backgroundColor: "#1a3f71",fontFamily: "Nunito', serif" ,fontWeight: 500,letterSpacing: "0.009em" }} >
+              <div className="w-full md:w-64 lg:w-72 bg-blue-500 h-12 m-2 flex justify-center items-center text-white" style={{backgroundColor: "",fontFamily: "Nunito', serif" ,fontWeight: 500,letterSpacing: "0.009em" }} >
                 <p>36HRS COMPETITION</p>
               </div>
               <div className="w-full md:w-64 lg:w-72 bg-white h-12 m-2 flex justify-center items-center text-white" style={{backgroundColor: "brown",fontFamily: "Nunito', serif" ,fontWeight: 500,letterSpacing: "0.009em" }} >

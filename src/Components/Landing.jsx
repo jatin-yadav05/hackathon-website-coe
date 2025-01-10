@@ -5,7 +5,7 @@ const Landing = () => {
     return(
         <>
         {/* body */}
-            <div className="w-full h-max  bg-no-repeat bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('vivek.jpg')`}}  >
+            <div className="w-full h-max  bg-no-repeat bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('footer-bg.jpg')`}}  >
                 <Welcome/>
             </div>
         </>
