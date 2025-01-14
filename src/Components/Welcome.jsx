@@ -96,7 +96,7 @@ const Welcome = () => {
         <div className="w-1/3 flex" >
             <a href="" className="w-1/3 hidden lg:flex items-center text-white justify-center"><p style={{fontFamily: "'Roboto Condensed', serif",fontWeight:500}}>The Hackathon</p></a>
             <a href="" className="w-1/3 hidden lg:flex items-center text-white justify-center"><p style={{fontFamily: "'Roboto Condensed', serif",fontWeight:500}}>The Rundown</p></a>
-            <a href="" className="w-full lg:w-1/3 flex items-center text-white bg-green-700 hover:bg-green-800 justify-center m-1 rounded"><p style={{fontFamily: "'Roboto Condensed', serif",fontWeight:500}}>Join the Waitlist</p></a>
+            <a href="https://forms.gle/VM5BZQMvYUu58iod6" target="_blank" className="w-full lg:w-1/3 flex items-center text-white bg-green-700 hover:bg-green-800 justify-center m-1 rounded"><p style={{fontFamily: "'Roboto Condensed', serif",fontWeight:500}}>Join the Waitlist</p></a>
         </div>
       </div>
 
@@ -133,7 +133,7 @@ const Welcome = () => {
               </div>
               
             </div>
-            <a href=""  className="w-full lg:w-1/4 h-20 flex items-center text-white bg-green-700 hover:bg-green-800 justify-center mt-2 lg:mt-5 rounded-lg text-3xl  "><p style={{fontFamily: "'Roboto Condensed', serif",fontWeight:500,display:"flex"}}>Join the Waitlist <img src="arrow.svg" alt="" className="ml-2" style={{height: "35px"}} /> </p></a>
+            <a href="https://forms.gle/VM5BZQMvYUu58iod6" target="_blank"  className="w-full lg:w-1/4 h-20 flex items-center text-white bg-green-700 hover:bg-green-800 justify-center mt-2 lg:mt-5 rounded-lg text-3xl  "><p style={{fontFamily: "'Roboto Condensed', serif",fontWeight:500,display:"flex"}}>Join the Waitlist <img src="arrow.svg" alt="" className="ml-2" style={{height: "35px"}} /> </p></a>
           </div>
           
         </div>
