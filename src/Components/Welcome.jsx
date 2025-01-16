@@ -151,7 +151,7 @@ const Welcome = () => {
         </div>
       </div>
 
-      <nav className="fixed top-0 w-full z-50 transition-all duration-500"
+      <nav className="fixed top-0 w-full z-50 transition-all duration-300"
         style={{
           opacity: navbarOpacity,
              backgroundColor: `rgba(5, 11, 20, ${navbarOpacity * 0.85})`,
@@ -221,23 +221,39 @@ const Welcome = () => {
         </div>
       </nav>
 
-      <div className={`md:hidden fixed inset-0 z-40 bg-black bg-opacity-50 transition-opacity duration-300 ${
+      <div className={`md:hidden fixed inset-0 z-[60] bg-black/50 backdrop-blur-sm transition-opacity duration-300 ${
         isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
       }`}>
-        <div className="fixed inset-y-0 right-0 max-w-xs w-full bg-[rgb(5,11,20)] shadow-xl">
-          <div className="flex flex-col p-6 space-y-4">
-            <NavLink href="#hackathon" onClick={() => setIsMobileMenuOpen(false)}>
-              The Hackathon
-            </NavLink>
-            <NavLink href="#rundown" onClick={() => setIsMobileMenuOpen(false)}>
-              The Rundown
-            </NavLink>
-            <a href="https://forms.gle/VM5BZQMvYUu58iod6" 
-               target="_blank"
-               className="nav-cta px-4 py-2 bg-green-600 text-white rounded-lg text-center"
-               onClick={() => setIsMobileMenuOpen(false)}>
-              Join Waitlist
-            </a>
+        <div className={`fixed right-0 top-0 h-full w-64 bg-[rgb(5,11,20)] shadow-xl transform transition-transform duration-300 ${
+          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}>
+          <div className="p-6 space-y-4">
+            <div className="flex justify-end">
+              <button onClick={() => setIsMobileMenuOpen(false)}
+                      className="text-gray-400 hover:text-white">
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <nav className="space-y-4">
+              <a href="#hackathon" 
+                 onClick={() => setIsMobileMenuOpen(false)}
+                 className="block text-gray-300 hover:text-white transition-colors py-2">
+                The Hackathon
+              </a>
+              <a href="#rundown"
+                 onClick={() => setIsMobileMenuOpen(false)}
+                 className="block text-gray-300 hover:text-white transition-colors py-2">
+                The Rundown
+              </a>
+              <a href="https://forms.gle/VM5BZQMvYUu58iod6"
+                 target="_blank"
+                 onClick={() => setIsMobileMenuOpen(false)}
+                 className="block text-emerald-500 hover:text-emerald-400 transition-colors py-2">
+                Join Waitlist
+              </a>
+            </nav>
           </div>
         </div>
       </div>
