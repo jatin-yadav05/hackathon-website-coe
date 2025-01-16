@@ -4,7 +4,6 @@ import Welcome from './Welcome';
 const Landing = () => {
     return(
         <>
-        {/* body */}
             <div className="w-full h-max  bg-no-repeat bg-cover bg-center bg-fixed" style={{ backgroundImage: `url('footer-bg.jpg')`}}  >
                 <Welcome/>
             </div>

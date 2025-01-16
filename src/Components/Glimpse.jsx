@@ -57,7 +57,6 @@ const Glimpse = () => {
           </p>
         </div>
       </div>
-      {/* carousel */}
       <div className="slider-container w-full h-max pb-2 overflow-hidden">
         <Slider {...settings}>
           <div className="p-1 border-2 border-yellow-100">
@@ -80,7 +79,6 @@ const Glimpse = () => {
           </div>
         </Slider>
       </div>
-      {/* Carousel 2 */}
       <div className="slider-container w-full h-max pb-2 overflow-hidden">
         <Slider {...settingss}>
           <div className="p-1 border-2 border-yellow-100">
