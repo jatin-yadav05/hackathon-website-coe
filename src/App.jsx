@@ -4,7 +4,7 @@ import Landing from './Components/Landing';
 
 let App = () => {
   return(
-    <BrowserRouter basename="/Hackathon-website" >
+    <BrowserRouter  >
       <Routes>
         <Route path="/" element={<Landing/>} />
       </Routes>
