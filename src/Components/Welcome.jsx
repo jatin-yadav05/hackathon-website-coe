@@ -46,13 +46,13 @@ const Welcome = () => {
 
   useEffect(() => {
     const cards = document.querySelectorAll('.tilt-card');
-    
+
     const handleMouseMove = (e) => {
       const card = e.currentTarget;
       const rect = card.getBoundingClientRect();
       const x = ((e.clientX - rect.left) / rect.width) * 100;
       const y = ((e.clientY - rect.top) / rect.height) * 100;
-      
+
       card.style.setProperty('--x', `${x}%`);
       card.style.setProperty('--y', `${y}%`);
     };
@@ -78,13 +78,13 @@ const Welcome = () => {
 
       <div className={`min-h-screen w-full relative ${isLoaded ? 'loaded' : ''}`}
         style={{
-             background: "linear-gradient(135deg, rgb(5, 11, 20) 0%, rgb(12, 20, 39) 100%)",
+          background: "linear-gradient(135deg, rgb(5, 11, 20) 0%, rgb(12, 20, 39) 100%)",
           opacity: opacity,
-             transition: "all 0.3s ease-out",
-           }}>
+          transition: "all 0.3s ease-out",
+        }}>
         <div className="absolute inset-0 bg-gradient-animate opacity-20" />
         <div className="absolute inset-0 bg-mesh-gradient"></div>
-        
+
         <div className="absolute inset-0 overflow-hidden">
           <div className="floating-shapes">
             {[...Array(6)].map((_, i) => (
@@ -97,18 +97,18 @@ const Welcome = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="glitch-wrapper mb-8">
               <h1 className="glitch text-7xl sm:text-8xl text-white font-bold tracking-tight"
-                  data-text="TechNova"
-                  style={{ fontFamily: "'Emilys Candy', serif" }}>
+                data-text="TechNova"
+                style={{ fontFamily: "'Emilys Candy', serif" }}>
                 Tech<span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600">Nova</span>
-                <span className="block text-3xl sm:text-4xl mt-4 font-light" 
-                      style={{ fontFamily: "'Mukta', sans-serif" }}>
+                <span className="block text-3xl sm:text-4xl mt-4 font-light"
+                  style={{ fontFamily: "'Mukta', sans-serif" }}>
                   2025
                 </span>
               </h1>
             </div>
-            
+
             <p className="text-xl sm:text-2xl text-gray-300 mb-12 typing-animation leading-relaxed"
-               style={{ fontFamily: "'Mukta', sans-serif" }}>
+              style={{ fontFamily: "'Mukta', sans-serif" }}>
               Our winter project is to kick off a hackathon renaissance, together.
 
               <span className="block mt-4 text-green-400/90">We'll begin soon, and we ask for you to join us!</span>
@@ -117,8 +117,8 @@ const Welcome = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center fade-in-up">
-              <a href="#details" 
-                 className="neon-button group px-8 py-4 bg-transparent text-white rounded-xl
+              <a href="#details"
+                className="neon-button group px-8 py-4 bg-transparent text-white rounded-xl
                            transition-all transform hover:scale-105 font-semibold text-lg
                            border border-green-500/30 hover:border-green-400
                            backdrop-blur-sm">
@@ -126,16 +126,16 @@ const Welcome = () => {
                   Learn More
                 </span>
               </a>
-              <a href="https://forms.gle/VM5BZQMvYUu58iod6" 
-                 target="_blank"
-                 className="cyber-button group px-8 py-4 rounded-xl
+              <a href="https://forms.gle/VM5BZQMvYUu58iod6"
+                target="_blank"
+                className="cyber-button group px-8 py-4 rounded-xl
                            transition-all transform hover:scale-105 font-semibold text-lg
                            bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700
                            text-white shadow-lg hover:shadow-green-500/50">
                 <span className="button-text flex items-center justify-center">
                   Join Waitlist
                   <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform"
-                       fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </span>
@@ -154,17 +154,17 @@ const Welcome = () => {
       <nav className="fixed top-0 w-full z-50 transition-all duration-300"
         style={{
           opacity: navbarOpacity,
-             backgroundColor: `rgba(5, 11, 20, ${navbarOpacity * 0.85})`,
-             backdropFilter: `blur(${navbarOpacity * 16}px)`,
-             borderBottom: navbarOpacity > 0 ? '1px solid rgba(255, 255, 255, 0.05)' : 'none',
-             transform: `translateY(${navbarOpacity === 0 ? '-100%' : '0'})`,
-           }}>
+          backgroundColor: `rgba(5, 11, 20, ${navbarOpacity * 0.85})`,
+          backdropFilter: `blur(${navbarOpacity * 16}px)`,
+          borderBottom: navbarOpacity > 0 ? '1px solid rgba(255, 255, 255, 0.05)' : 'none',
+          transform: `translateY(${navbarOpacity === 0 ? '-100%' : '0'})`,
+        }}>
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center space-x-4 group">
               <div className="relative overflow-hidden rounded-lg">
-                <img src="coe.jpg" alt="COE Logo" 
-                     className="h-12 w-12 object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                <img src="coe.jpg" alt="COE Logo"
+                  className="h-12 w-12 object-cover transform group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 to-transparent 
                                 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
@@ -191,17 +191,17 @@ const Welcome = () => {
                                   group-hover:w-full transition-all duration-300" />
                 </span>
               </NavLink>
-              <a href="https://forms.gle/VM5BZQMvYUu58iod6" 
-                 target="_blank"
-                 className="nav-cta relative px-6 py-2.5 overflow-hidden group bg-gradient-to-r 
+              <a href="https://forms.gle/VM5BZQMvYUu58iod6"
+                target="_blank"
+                className="nav-cta relative px-6 py-2.5 overflow-hidden group bg-gradient-to-r 
                             from-green-500 to-emerald-600 text-white rounded-xl
                             hover:shadow-[0_0_25px_rgba(34,197,94,0.3)] transition-all duration-300">
                 <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 
                                 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease" />
                 <span className="relative flex items-center">
                   Join Waitlist
-                  <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" 
-                       fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </span>
@@ -209,7 +209,7 @@ const Welcome = () => {
             </div>
 
             <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                    className="md:hidden relative w-10 h-10 text-white focus:outline-none">
+              className="md:hidden relative w-10 h-10 text-white focus:outline-none">
               <span className={`absolute w-6 h-0.5 bg-white transform transition-all duration-300
                                ${isMobileMenuOpen ? 'rotate-45 translate-y-0' : '-translate-y-2'}`} />
               <span className={`absolute w-6 h-0.5 bg-white transform transition-all duration-300
@@ -221,36 +221,34 @@ const Welcome = () => {
         </div>
       </nav>
 
-      <div className={`md:hidden fixed inset-0 z-[60] bg-black/50 backdrop-blur-sm transition-opacity duration-300 ${
-        isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-      }`}>
-        <div className={`fixed right-0 top-0 h-full w-64 bg-[rgb(5,11,20)] shadow-xl transform transition-transform duration-300 ${
-          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+      <div className={`md:hidden fixed inset-0 z-[60] bg-black/50 backdrop-blur-sm transition-opacity duration-300 ${isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}>
+        <div className={`fixed right-0 top-0 h-full w-64 bg-[rgb(5,11,20)] shadow-xl transform transition-transform duration-300 ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}>
           <div className="p-6 space-y-4">
             <div className="flex justify-end">
               <button onClick={() => setIsMobileMenuOpen(false)}
-                      className="text-gray-400 hover:text-white">
+                className="text-gray-400 hover:text-white">
                 <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
             </div>
             <nav className="space-y-4">
-              <a href="#hackathon" 
-                 onClick={() => setIsMobileMenuOpen(false)}
-                 className="block text-gray-300 hover:text-white transition-colors py-2">
+              <a href="#hackathon"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block text-gray-300 hover:text-white transition-colors py-2">
                 The Hackathon
               </a>
               <a href="#rundown"
-                 onClick={() => setIsMobileMenuOpen(false)}
-                 className="block text-gray-300 hover:text-white transition-colors py-2">
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block text-gray-300 hover:text-white transition-colors py-2">
                 The Rundown
               </a>
               <a href="https://forms.gle/VM5BZQMvYUu58iod6"
-                 target="_blank"
-                 onClick={() => setIsMobileMenuOpen(false)}
-                 className="block text-emerald-500 hover:text-emerald-400 transition-colors py-2">
+                target="_blank"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block text-emerald-500 hover:text-emerald-400 transition-colors py-2">
                 Join Waitlist
               </a>
             </nav>
@@ -272,7 +270,7 @@ const Welcome = () => {
                 Join us for an unforgettable experience of innovation, collaboration, and breakthrough moments.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 mb-20">
               <div className="lg:col-span-1">
                 <div className="tilt-card group h-full">
@@ -280,57 +278,57 @@ const Welcome = () => {
                                  p-8 flex flex-col items-center justify-center min-h-[240px] lg:min-h-[500px]
                                  border border-orange-500/20 group-hover:border-orange-500/40">
                     <div className="text-white text-center transform group-hover:scale-105 transition-transform">
-                      <div className="text-orange-400 text-3xl font-medium mb-4">JANUARY</div>
+                      <div className="text-orange-400 text-3xl font-medium mb-4">FEBRUARY</div>
                       <div className="text-8xl font-bold bg-gradient-to-r from-orange-400 to-orange-600 
-                                    text-transparent bg-clip-text mb-4">10</div>
-                      <div className="text-orange-400/80 text-2xl">2025</div>
+                                    text-transparent bg-clip-text mb-4">27</div>
+                      <div className="text-orange-400/80 text-2xl">& 28</div>
                       <div className="mt-8 pt-8 border-t border-orange-500/20">
                         <p className="text-orange-300/90 text-lg">Join us for an unforgettable experience</p>
                       </div>
                     </div>
-                </div>
+                  </div>
                 </div>
               </div>
 
               <div className="lg:col-span-4 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <FeatureCard 
+                <FeatureCard
                   gradient="from-purple-600 to-purple-700"
                   title="Single Theme"
                   description="Focus on one challenge, maximize your impact. Join us for a concentrated innovation sprint."
                   icon="🎯"
                 />
-                
-                <FeatureCard 
+
+                <FeatureCard
                   gradient="from-blue-600 to-blue-700"
-                  title="24HR+"
-                  description="A full day of coding, learning, and building. Push your limits and create something amazing."
+                  title="2 Days Event"
+                  description="Two full days of coding, learning, and building. Push your limits and create something amazing at Einstein Hall."
                   icon="⚡"
                 />
-                
-                <FeatureCard 
+
+                <FeatureCard
                   gradient="from-red-600 to-red-700"
                   title="Web Dev"
                   description="Build the future of the web. Use cutting-edge technologies to bring your ideas to life."
                   icon="🌐"
                 />
 
-                <FeatureCard 
+                <FeatureCard
                   gradient="from-yellow-600 to-yellow-700"
                   title="Fun Activities"
                   description="Engage in exciting side events, networking sessions, and interactive challenges throughout the hackathon."
                   icon="🎮"
                 />
               </div>
-              </div>
-              
+            </div>
+
             <div className="text-center space-y-8">
               <h3 className="text-2xl md:text-3xl text-white font-semibold mb-6 reveal-text">
                 Ready to Join the Revolution?
               </h3>
               <div className="flex flex-col items-center justify-center space-y-4">
-                <a href="https://forms.gle/VM5BZQMvYUu58iod6" 
-                   target="_blank"
-                   className="mega-button group inline-flex items-center px-8 py-4 
+                <a href="https://forms.gle/VM5BZQMvYUu58iod6"
+                  target="_blank"
+                  className="mega-button group inline-flex items-center px-8 py-4 
                              text-white rounded-lg transition-all 
                              font-semibold text-xl max-w-md w-full justify-center">
                   <span className="button-inner flex items-center">
@@ -344,15 +342,145 @@ const Welcome = () => {
           </div>
         </div>
 
-        <Glimpse/>
+        <div className="bg-[rgb(5,11,20)]/50 relative">
+          <div className="container mx-auto px-4 py-24">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-16">
+                <span className="text-emerald-400 text-sm font-semibold tracking-wider uppercase">About The Event</span>
+                <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text">
+                  TechNova: Code the Future
+                </h2>
+                <div className="w-24 h-1 bg-gradient-to-r from-emerald-400 to-emerald-600 mx-auto"></div>
+              </div>
+
+              <div className="space-y-12">
+                <div className="bg-gradient-to-br from-[rgba(255,255,255,0.05)] to-[rgba(255,255,255,0.02)] 
+                                rounded-2xl p-8 md:p-12 backdrop-blur-sm border border-white/5
+                                transform transition-all duration-500
+                                hover:border-emerald-500/40 group">
+
+                  <div className="space-y-6 text-gray-300 leading-relaxed">
+                    <p className="text-lg md:text-xl font-light">
+                      <span className="text-emerald-400 font-semibold">Chitkara University</span>, in collaboration with the
+                      <span className="text-emerald-400 font-semibold"> Centre of Excellence</span> powered by the
+                      <span className="text-emerald-400 font-semibold"> Apple Student Community</span>, presents an intensive
+                      two-day hackathon that will redefine innovation.
+                    </p>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-12">
+                      <div className="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-all duration-300
+                                    border border-white/5 hover:border-emerald-500/20">
+                        <div className="text-emerald-400 text-3xl mb-4">📅</div>
+                        <h4 className="text-white font-semibold text-lg mb-2">Event Date</h4>
+                        <p className="text-gray-400">February 27-28, 2025</p>
+                        <p className="text-gray-400">48 Hours of Innovation</p>
+                      </div>
+
+                      <div className="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-all duration-300
+                                    border border-white/5 hover:border-emerald-500/20">
+                        <div className="text-emerald-400 text-3xl mb-4">📍</div>
+                        <h4 className="text-white font-semibold text-lg mb-2">Venue</h4>
+                        <p className="text-gray-400">Einstein Hall</p>
+                        <p className="text-gray-400">Chitkara University</p>
+                      </div>
+
+                      <div className="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-all duration-300
+                                    border border-white/5 hover:border-emerald-500/20">
+                        <div className="text-emerald-400 text-3xl mb-4">👥</div>
+                        <h4 className="text-white font-semibold text-lg mb-2">Team Size</h4>
+                        <p className="text-gray-400">3-5 Members per Team</p>
+                        <p className="text-gray-400">Collaborative Spirit</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-gradient-to-br from-white/5 to-transparent rounded-xl p-8 my-12">
+                      <h3 className="text-2xl font-semibold text-white mb-6">Event Highlights</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div className="flex items-start space-x-4">
+                          <span className="text-emerald-400 text-2xl">💡</span>
+                          <div>
+                            <h4 className="text-white font-medium mb-2">Real-world Challenges</h4>
+                            <p className="text-gray-400 text-sm">Tackle actual industry problems</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start space-x-4">
+                          <span className="text-emerald-400 text-2xl">🤝</span>
+                          <div>
+                            <h4 className="text-white font-medium mb-2">Networking</h4>
+                            <p className="text-gray-400 text-sm">Connect with industry experts</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start space-x-4">
+                          <span className="text-emerald-400 text-2xl">🏆</span>
+                          <div>
+                            <h4 className="text-white font-medium mb-2">Amazing Prizes</h4>
+                            <p className="text-gray-400 text-sm">Win exciting rewards</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="space-y-6">
+                      <p className="text-lg leading-relaxed">
+                        Our vision is to create an environment that sparks creativity and fosters innovation.
+                        Participants will have the opportunity to transform their ideas into reality while
+                        learning from peers and mentors.
+                      </p>
+
+                      <p className="text-lg leading-relaxed">
+                        Through this hackathon, we aim to:
+                      </p>
+
+                      <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                        <li className="flex items-center space-x-3">
+                          <span className="text-emerald-400">✦</span>
+                          <span>Foster innovative problem-solving</span>
+                        </li>
+                        <li className="flex items-center space-x-3">
+                          <span className="text-emerald-400">✦</span>
+                          <span>Encourage collaborative development</span>
+                        </li>
+                        <li className="flex items-center space-x-3">
+                          <span className="text-emerald-400">✦</span>
+                          <span>Showcase technical excellence</span>
+                        </li>
+                        <li className="flex items-center space-x-3">
+                          <span className="text-emerald-400">✦</span>
+                          <span>Build lasting connections</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="text-center mt-12">
+                  <a href="https://forms.gle/VM5BZQMvYUu58iod6"
+                    target="_blank"
+                    className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-emerald-500 to-emerald-700
+                               text-white rounded-lg transition-all transform hover:scale-105 
+                               font-semibold text-lg group hover:shadow-lg hover:shadow-emerald-500/25">
+                    Register Your Team
+                    <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform"
+                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </a>
+                  <p className="text-gray-400 mt-4">Limited spots available. Register now!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <Glimpse />
       </div>
     </div>
   );
 };
 
 const NavLink = ({ href, children }) => (
-  <a href={href} 
-     className="text-gray-300 hover:text-white transition-colors relative nav-link">
+  <a href={href}
+    className="text-gray-300 hover:text-white transition-colors relative nav-link">
     {children}
   </a>
 );
@@ -363,10 +491,10 @@ const FeatureCard = ({ gradient, title, description, icon }) => {
     const rect = card.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
-    
+
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
-    
+
     const rotateX = (y - centerY) / 25;
     const rotateY = -(x - centerX) / 25;
 
@@ -381,8 +509,8 @@ const FeatureCard = ({ gradient, title, description, icon }) => {
   return (
     <div className="card-wrapper">
       <div className="tilt-card group h-full"
-           onMouseMove={handleMouseMove}
-           onMouseLeave={handleMouseLeave}>
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}>
         <div className={`card-content bg-gradient-to-br ${gradient} group-hover:shadow-xl
                         p-8 flex flex-col items-center justify-center min-h-[240px]
                         relative overflow-hidden border border-white/5
