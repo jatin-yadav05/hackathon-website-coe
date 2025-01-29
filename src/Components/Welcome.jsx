@@ -286,15 +286,15 @@ const Welcome = () => {
                         <p className="text-orange-300/90 text-lg">Join us for an unforgettable experience</p>
                       </div>
                     </div>
-                  </div>
+                </div>
                 </div>
               </div>
 
               <div className="lg:col-span-4 grid grid-cols-1 md:grid-cols-2 gap-8">
                 <FeatureCard
                   gradient="from-purple-600 to-purple-700"
-                  title="Single Theme"
-                  description="Focus on one challenge, maximize your impact. Join us for a concentrated innovation sprint."
+                  title="Multi Theme"
+                  description="Choose from multiple exciting challenges. Explore different domains and unleash your creativity across various themes."
                   icon="🎯"
                 />
 
@@ -336,6 +336,9 @@ const Welcome = () => {
                     <img src="arrow.svg" alt="" className="ml-2 h-6 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </a>
+                <p className="text-red-400 text-lg font-semibold mb-4">
+                  Last Date to Register: <span className="text-red-400/90">February 22, 2025</span>
+                </p>
                 <p className="text-gray-400 text-sm">Limited spots available. Register now!</p>
               </div>
             </div>
@@ -374,6 +377,10 @@ const Welcome = () => {
                         <h4 className="text-white font-semibold text-lg mb-2">Event Date</h4>
                         <p className="text-gray-400">February 27-28, 2025</p>
                         <p className="text-gray-400">48 Hours of Innovation</p>
+                        <div className="mt-4 pt-4 border-t border-emerald-500/20">
+                          <p className="text-red-400 font-semibold">Last Date to Register:</p>
+                          <p className="text-red-400">February 22, 2025</p>
+                        </div>
                       </div>
 
                       <div className="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-all duration-300
@@ -394,27 +401,97 @@ const Welcome = () => {
                     </div>
 
                     <div className="bg-gradient-to-br from-white/5 to-transparent rounded-xl p-8 my-12">
-                      <h3 className="text-2xl font-semibold text-white mb-6">Event Highlights</h3>
-                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <div className="flex items-start space-x-4">
-                          <span className="text-emerald-400 text-2xl">💡</span>
-                          <div>
-                            <h4 className="text-white font-medium mb-2">Real-world Challenges</h4>
-                            <p className="text-gray-400 text-sm">Tackle actual industry problems</p>
-                          </div>
+                      <h3 className="text-2xl font-semibold text-white mb-8">Hackathon Themes</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {/* Theme 1 */}
+                        <div className="bg-gradient-to-br from-purple-500/20 to-purple-600/10 rounded-xl p-6 
+                                        border border-purple-500/20 hover:border-purple-500/40 
+                                        transition-all duration-300 group hover:transform hover:scale-[1.02]">
+                          <div className="text-purple-400 text-3xl mb-4">👩‍💼</div>
+                          <h4 className="text-white font-semibold text-lg mb-3 group-hover:text-purple-400 transition-colors">
+                            Women Entrepreneurs
+                          </h4>
+                          <p className="text-gray-400 text-sm leading-relaxed">
+                            Innovative solutions empowering women in business and leadership roles
+                          </p>
                         </div>
-                        <div className="flex items-start space-x-4">
-                          <span className="text-emerald-400 text-2xl">🤝</span>
-                          <div>
-                            <h4 className="text-white font-medium mb-2">Networking</h4>
-                            <p className="text-gray-400 text-sm">Connect with industry experts</p>
-                          </div>
+
+                        {/* Theme 2 */}
+                        <div className="bg-gradient-to-br from-blue-500/20 to-blue-600/10 rounded-xl p-6 
+                                        border border-blue-500/20 hover:border-blue-500/40 
+                                        transition-all duration-300 group hover:transform hover:scale-[1.02]">
+                          <div className="text-blue-400 text-3xl mb-4">🌆</div>
+                          <h4 className="text-white font-semibold text-lg mb-3 group-hover:text-blue-400 transition-colors">
+                            Smart Cities
+                          </h4>
+                          <p className="text-gray-400 text-sm leading-relaxed">
+                            Urban entrepreneurship solutions for sustainable smart cities
+                          </p>
                         </div>
-                        <div className="flex items-start space-x-4">
-                          <span className="text-emerald-400 text-2xl">🏆</span>
-                          <div>
-                            <h4 className="text-white font-medium mb-2">Amazing Prizes</h4>
-                            <p className="text-gray-400 text-sm">Win exciting rewards</p>
+
+                        {/* Theme 3 */}
+                        <div className="bg-gradient-to-br from-emerald-500/20 to-emerald-600/10 rounded-xl p-6 
+                                        border border-emerald-500/20 hover:border-emerald-500/40 
+                                        transition-all duration-300 group hover:transform hover:scale-[1.02]">
+                          <div className="text-emerald-400 text-3xl mb-4">🌱</div>
+                          <h4 className="text-white font-semibold text-lg mb-3 group-hover:text-emerald-400 transition-colors">
+                            Social Enterprises
+                          </h4>
+                          <p className="text-gray-400 text-sm leading-relaxed">
+                            Technology-driven solutions for social impact and community development
+                          </p>
+                        </div>
+
+                        {/* Theme 4 */}
+                        <div className="bg-gradient-to-br from-amber-500/20 to-amber-600/10 rounded-xl p-6 
+                                        border border-amber-500/20 hover:border-amber-500/40 
+                                        transition-all duration-300 group hover:transform hover:scale-[1.02]">
+                          <div className="text-amber-400 text-3xl mb-4">🔄</div>
+                          <h4 className="text-white font-semibold text-lg mb-3 group-hover:text-amber-400 transition-colors">
+                            Gig Economy
+                          </h4>
+                          <p className="text-gray-400 text-sm leading-relaxed">
+                            Innovative platforms and solutions for the future of work
+                          </p>
+                        </div>
+
+                        {/* Theme 5 */}
+                        <div className="bg-gradient-to-br from-green-500/20 to-green-600/10 rounded-xl p-6 
+                                        border border-green-500/20 hover:border-green-500/40 
+                                        transition-all duration-300 group hover:transform hover:scale-[1.02]">
+                          <div className="text-green-400 text-3xl mb-4">🌾</div>
+                          <h4 className="text-white font-semibold text-lg mb-3 group-hover:text-green-400 transition-colors">
+                            Rural Development
+                          </h4>
+                          <p className="text-gray-400 text-sm leading-relaxed">
+                            Entrepreneurial solutions for rural growth and sustainability
+                          </p>
+                        </div>
+
+                        {/* Info Card */}
+                        <div className="bg-gradient-to-br from-gray-500/20 to-gray-600/10 rounded-xl p-6 
+                                        border border-gray-500/20 
+                                        transition-all duration-300 flex flex-col justify-center">
+                          <div className="text-center">
+                            <p className="text-gray-400 text-sm mb-4">Choose your theme and make an impact</p>
+                            <a href="#register" 
+                               className="inline-flex items-center px-4 py-2 bg-white/10 rounded-lg 
+                                          relative overflow-hidden group
+                                          hover:bg-white/20 hover:scale-105 hover:shadow-lg 
+                                          hover:shadow-white/20 hover:text-emerald-400
+                                          transition-all duration-300 text-white text-sm
+                                          before:absolute before:top-0 before:left-0 before:w-full 
+                                          before:h-full before:bg-gradient-to-r 
+                                          before:from-transparent before:via-white/20 before:to-transparent
+                                          before:translate-x-[-200%] hover:before:translate-x-[200%]
+                                          before:transition-transform before:duration-1000">
+                              Learn More
+                              <svg className="w-4 h-4 ml-2 group-hover:translate-x-2 group-hover:text-emerald-400
+                                            transition-all duration-300" 
+                                   fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                              </svg>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -451,8 +528,8 @@ const Welcome = () => {
                       </ul>
                     </div>
                   </div>
-                </div>
-
+              </div>
+              
                 <div className="text-center mt-12">
                   <a href="https://forms.gle/VM5BZQMvYUu58iod6"
                     target="_blank"
@@ -521,7 +598,7 @@ const FeatureCard = ({ gradient, title, description, icon }) => {
             <div className="absolute -inset-[100%] animate-spin-slow bg-gradient-to-r 
                           from-transparent via-white/[0.05] to-transparent"></div>
           </div>
-
+          
           <div className="relative z-10 transform group-hover:translate-y-[-5px] 
                          transition-all duration-300">
             <div className="text-5xl mb-6 transform group-hover:scale-110 

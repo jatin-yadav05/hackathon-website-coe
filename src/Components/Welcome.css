@@ -675,3 +675,11 @@ a, button {
   }
 }
 
+.track-card {
+  transition: all 0.3s ease;
+}
+
+.track-card:hover {
+  transform: translateY(-5px);
+}
+
