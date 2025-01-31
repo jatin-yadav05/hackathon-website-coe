@@ -401,7 +401,7 @@ const Welcome = () => {
                     </div>
 
                     <div className="bg-gradient-to-br from-white/5 to-transparent rounded-xl p-8 my-12">
-                      <h3 className="text-2xl font-semibold text-white mb-8">event Themes</h3>
+                      <h3 className="text-2xl font-semibold text-white mb-8">Event Themes</h3>
                       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* Theme 1 */}
                         <div className="bg-gradient-to-br from-purple-500/20 to-purple-600/10 rounded-xl p-6 
