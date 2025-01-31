@@ -109,7 +109,7 @@ const Welcome = () => {
 
             <p className="text-xl sm:text-2xl text-gray-300 mb-12 typing-animation leading-relaxed"
               style={{ fontFamily: "'Mukta', sans-serif" }}>
-              Our winter project is to kick off a hackathon renaissance, together.
+              Our winter project is to kick off a event renaissance, together.
 
               <span className="block mt-4 text-green-400/90">We'll begin soon, and we ask for you to join us!</span>
 
@@ -177,9 +177,9 @@ const Welcome = () => {
             </div>
 
             <div className="hidden md:flex items-center space-x-8">
-              <NavLink href="#hackathon">
+              <NavLink href="#event">
                 <span className="relative group">
-                  The Hackathon
+                  The Event
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-green-400 to-emerald-600 
                                   group-hover:w-full transition-all duration-300" />
                 </span>
@@ -235,10 +235,10 @@ const Welcome = () => {
               </button>
             </div>
             <nav className="space-y-4">
-              <a href="#hackathon"
+              <a href="#event"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block text-gray-300 hover:text-white transition-colors py-2">
-                The Hackathon
+                The Event
               </a>
               <a href="#rundown"
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -315,7 +315,7 @@ const Welcome = () => {
                 <FeatureCard
                   gradient="from-yellow-600 to-yellow-700"
                   title="Fun Activities"
-                  description="Engage in exciting side events, networking sessions, and interactive challenges throughout the hackathon."
+                  description="Engage in exciting side events, networking sessions, and interactive challenges throughout the event."
                   icon="🎮"
                 />
               </div>
@@ -367,7 +367,7 @@ const Welcome = () => {
                       <span className="text-emerald-400 font-semibold">Chitkara University</span>, in collaboration with the
                       <span className="text-emerald-400 font-semibold"> Centre of Excellence</span> powered by the
                       <span className="text-emerald-400 font-semibold"> Apple Student Community</span>, presents an intensive
-                      two-day hackathon that will redefine innovation.
+                      two-day event that will redefine innovation.
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-12">
@@ -401,7 +401,7 @@ const Welcome = () => {
                     </div>
 
                     <div className="bg-gradient-to-br from-white/5 to-transparent rounded-xl p-8 my-12">
-                      <h3 className="text-2xl font-semibold text-white mb-8">Hackathon Themes</h3>
+                      <h3 className="text-2xl font-semibold text-white mb-8">event Themes</h3>
                       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* Theme 1 */}
                         <div className="bg-gradient-to-br from-purple-500/20 to-purple-600/10 rounded-xl p-6 
@@ -505,7 +505,7 @@ const Welcome = () => {
                       </p>
 
                       <p className="text-lg leading-relaxed">
-                        Through this hackathon, we aim to:
+                        Through this event, we aim to:
                       </p>
 
                       <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
